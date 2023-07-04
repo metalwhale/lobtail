@@ -1,2 +1,6 @@
+requests==2.31.0
+gluonts[torch]==0.13.2
+
 # Dev
 autopep8==2.0.2
+matplotlib==3.7.1

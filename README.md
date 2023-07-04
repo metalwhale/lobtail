@@ -8,6 +8,10 @@ Waves rise when whales lobtail
     docker-compose up -d
     docker-compose exec -it lobtail bash
     ```
+2. Fetch data:
+    ```bash
+    python -m data.fetcher
+    ```
 
 ## References
 - [`awesome-quant`](https://github.com/wilsonfreitas/awesome-quant)
