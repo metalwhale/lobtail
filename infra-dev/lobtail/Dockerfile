@@ -3,8 +3,8 @@ FROM python:3.10.12
 RUN apt update -y
 
 # Build qlib. See: https://qlib.readthedocs.io/en/latest/start/installation.html#qlib-installation
-COPY requirements.txt /tmp/requirements.txt
 RUN apt install -y cmake
+COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt \
     && rm /tmp/requirements.txt
 RUN cd /usr/src/ \
