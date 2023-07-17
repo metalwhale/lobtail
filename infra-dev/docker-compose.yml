@@ -8,3 +8,11 @@ services:
       - ../:/usr/src/lobtail
     tty: true
     working_dir: /usr/src/lobtail/lobtail
+  skimmer:
+    build:
+      context: ../skimmer
+      dockerfile: ${PWD}/skimmer/Dockerfile
+    volumes:
+      - ../:/usr/src/lobtail
+    tty: true
+    working_dir: /usr/src/lobtail/skimmer
