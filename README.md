@@ -1,12 +1,22 @@
 # lobtail
 Waves rise when whales lobtail
 
-## Development
+## Local development
+### Startup
+1. Create a `.env` file by copying from [`./local.env`](./local.env):
+    ```bash
+    cp local.env .env
+    ```
+    and then fill in the variables with appropriate values in the `.env` file.
+2. Start the containers:
+    ```bash
+    docker compose up -d
+    ```
+
+### Play on the beach
 1. Get inside the container:
     ```bash
-    cd ./infra-dev
-    docker-compose up -d
-    docker-compose exec -it lobtail bash
+    docker compose exec -it beach bash
     ```
 
 ## References

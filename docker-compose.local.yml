@@ -1,0 +1,10 @@
+version: "3"
+services:
+  beach:
+    build:
+      context: ./beach
+      dockerfile: Dockerfile.local
+    volumes:
+      - ./:/usr/src/lobtail/
+    tty: true
+    working_dir: /usr/src/lobtail/
