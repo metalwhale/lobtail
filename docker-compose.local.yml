@@ -8,3 +8,11 @@ services:
       - ./:/usr/src/lobtail/
     tty: true
     working_dir: /usr/src/lobtail/
+  collector:
+    build:
+      context: ./lobtail-collector
+      dockerfile: Dockerfile.local
+    volumes:
+      - ./data/:/usr/src/lobtail/data/
+    tty: true
+    working_dir: /usr/src/qlib/
